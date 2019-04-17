@@ -1,14 +1,11 @@
 # col2row
 ### a very hack-y solution to reshaping
 
--
 *function will output 'char' no matter the input type*
 
--
 Matlab uses a column-down index reference when transforming arrays. We may have a column of differing length values stored as chars, or ints, that we collect from a stream of non-delimited uint8. We now require a simple mechanism of reshaping while ensuring that appropriate padding is present.
 The inverse operation is trivial, as we simply access through a split(length) function
 
--
 It should be noted this is essentially just a decorator for the documented char(reshape(array)) function, and is not optimized for multithreading within the native environment. For *very very* long inputs, ie. Hard drive volume encrypts, performance may be non-ideal.
 
 col2row(column), where column is of format:
