@@ -23,7 +23,7 @@ padding:  *zeros*
 
 function will **Pass** on error and print warning, returning **self(input)**
 
-This is a result of several bit of boilerplate I found myself needing throughout the development of some basic encryption experiments, where bit length conformity was a necessity with errors raised.
+This is a result of several bit of boilerplate I found myself needing throughout the development of some basic encryption experiments, where bit length conformity was a necessity.
 
 
 ### Recipes
