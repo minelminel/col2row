@@ -85,7 +85,7 @@ row = col2row(nums)
 
 ###### type == 'logical'
 ```
-you get the idea
+% function will parse column of Logical *strings* and return a bit stream of 1's & 0's
 ```
 
 
