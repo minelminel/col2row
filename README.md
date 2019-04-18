@@ -1,4 +1,4 @@
-# col2row
+# col2row :triangular_ruler:
 ### a very hack-y solution to reshaping
 
 *function will output 'char' no matter the input type*
