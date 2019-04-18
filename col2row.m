@@ -20,8 +20,6 @@ switch class(col)
             end
         end
 
-
-
     case 'double'
         matrix = num2str(col);     % convert to char
         for i = 1:size(matrix,1)   % iterate to pad zeros
@@ -36,8 +34,6 @@ switch class(col)
             end
         end
 
-
-
     case 'uint8'
         matrix = num2str(double(col));  % convert to double, then string
         for i = 1:size(matrix,1)   % iterate to pad zeros
@@ -51,8 +47,6 @@ switch class(col)
                 counter = counter + 1;
             end
         end
-
-
 
     case 'logical'
         matrix = num2str(double(col));  % convert to double, then string
@@ -70,10 +64,8 @@ switch class(col)
             end
         end
 
-
     otherwise
         row = col;
         fprintf('\nWarning: class "%s" not supported for col2row\n',string(class(col)));
-
 end
 % % end of script
